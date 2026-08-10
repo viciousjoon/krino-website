@@ -1,8 +1,43 @@
-# OS
+# ── OS / editor cruft ──
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.idea/
+.vscode/
 
-# Local editor / tooling
+# ── Local tooling ──
 .claude/
 
-# Local backups (kept out of history)
+# ── Local backups (kept out of git history) ──
+*.bak
 *.bak.html
+*.orig
+*~
+
+# ── Secrets & credentials — NEVER commit ──
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+*.keystore
+*.jks
+*.secret
+secrets.*
+credentials.json
+service-account*.json
+.netrc
+
+# ── Private working notes (this repo is the PUBLIC site only) ──
+# Business/strategy docs live in the parent folder and must never be copied in.
+*_private.*
+*_internal.*
+*_DRAFT.*
+notes/
+private/
