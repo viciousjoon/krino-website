@@ -319,12 +319,12 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
       <div class="doc">
         <div class="hdg">Denials by reason &mdash; June 2026</div>
         <table><tbody>
-          <tr><td>CO-16&nbsp;&nbsp;&nbsp;Missing or incomplete information</td><td class="num">22 claims</td><td class="num">$4,180</td></tr>
-          <tr><td>CO-97&nbsp;&nbsp;&nbsp;Bundled into another service</td><td class="num">14 claims</td><td class="num">$2,740</td></tr>
+          <tr><td>CO-16&nbsp;&nbsp;&nbsp;Claim lacks information or has a billing error</td><td class="num">22 claims</td><td class="num">$4,180</td></tr>
+          <tr><td>CO-97&nbsp;&nbsp;&nbsp;Benefit included in another service&rsquo;s payment</td><td class="num">14 claims</td><td class="num">$2,740</td></tr>
           <tr><td>CO-50&nbsp;&nbsp;&nbsp;Not deemed medically necessary</td><td class="num">8 claims</td><td class="num">$3,920</td></tr>
           <tr><td>CO-22&nbsp;&nbsp;&nbsp;Coordination of benefits</td><td class="num">7 claims</td><td class="num">$2,020</td></tr>
-          <tr><td>PR-31&nbsp;&nbsp;&nbsp;Patient not eligible on date of service</td><td class="num">6 claims</td><td class="num">$1,610</td></tr>
-          <tr><td>CO-197&nbsp;&nbsp;Prior authorization absent</td><td class="num">4 claims</td><td class="num">$3,690</td></tr>
+          <tr><td>PR-31&nbsp;&nbsp;&nbsp;Patient cannot be identified as our insured</td><td class="num">6 claims</td><td class="num">$1,610</td></tr>
+          <tr><td>CO-197&nbsp;&nbsp;Precertification / authorization absent</td><td class="num">4 claims</td><td class="num">$3,690</td></tr>
           <tr class="tot"><td></td><td class="num">61 claims</td><td class="num">$18,160</td></tr>
         </tbody></table>
       </div>
@@ -392,285 +392,176 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
               </tr>
             </thead>
             <tbody id="cbody">
-
 <tr class="main" data-tag="clinical" data-state="open" data-who="Physician" data-open="false">
-<td class="pt"><span class="caret">›</span> Okafor, D.</td><td class="p2 nw" data-v="2026-02-27">02/27/2026</td><td class="p4">99215</td><td class="p3">Medicare</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Okafor, D.</td><td class="p2 nw" data-v="2026-02-27">02/27/2026</td><td class="p4">99215</td><td class="p3">Medicare</td>
 <td class="r" data-v="186.00">$186.00</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="2">Denied</td>
 <td class="means p3">Documentation didn&rsquo;t support the level billed</td>
-<td data-v="5"><span class="tag t-clinical">Appeal · clinical</span></td>
+<td data-v="5"><span class="tag t-clinical">Appeal &middot; clinical</span></td>
 <td class="who phys p3" data-v="4">Physician</td>
-<td class="p2 unres" data-v="164" title="164 days since anyone recorded an action on this claim">Open <em>· untouched 164d</em></td>
+<td class="p2 unres" data-v="134" title="134 days since anyone recorded an action on this claim">Open <em>&middot; untouched 134d</em></td>
 <td class="exp" data-v="-1">EXPIRED</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">02/27/2026</span> Visit</li><li><span class="d">03/02/2026</span> Claim submitted</li>
-<li><span class="d">03/03/2026</span> Accepted by payer</li><li><span class="d">03/26/2026</span> Remittance — denied CO-50</li>
-<li><span class="d">03/30/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 164 days</li>
-<li class="gap"><span class="d">07/24/2026</span> Appeal window closed</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0311-8842</li><li><span>Patient DOB</span> 07/21/1955</li>
-<li><span>Billed</span> $186.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-50 · not deemed medically necessary</li></ul>
-<div class="next"><b>What was needed</b>A redetermination request with the office note showing the complexity that supported a level 5. Medicare allows 120 days from the remittance notice. That window has now passed.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">02/27/2026</span> Visit</li><li><span class="d">03/02/2026</span> Claim submitted</li><li><span class="d">03/03/2026</span> Accepted by payer</li><li><span class="d">03/26/2026</span> Remittance &mdash; denied CO-50</li><li><span class="d">03/30/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 134 days</li><li class="gap"><span class="d">07/29/2026</span> Appeal window closed</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0311-8842</li><li><span>Patient DOB</span> 07/21/1955</li><li><span>Billed</span> $186.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-50 &middot; not deemed medically necessary</li></ul><div class="next"><b>What was needed</b>A redetermination request with the office note showing the complexity that supported a level 5. Medicare allows 120 days from receipt of the remittance advice, and receipt is presumed five days after the notice date. That window closed on 07/29/2026.</div></div>
 </div></td></tr>
-
 <tr class="main" data-tag="resubmit" data-state="open" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Ibrahim, R.</td><td class="p2 nw" data-v="2026-03-20">03/20/2026</td><td class="p4">J1100</td><td class="p3">Medicare</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Ibrahim, R.</td><td class="p2 nw" data-v="2026-03-20">03/20/2026</td><td class="p4">J1100</td><td class="p3">Medicare</td>
 <td class="r" data-v="41.30">$41.30</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="2">Denied</td>
 <td class="means p3">Billed without the qualifying service it attaches to</td>
 <td data-v="1"><span class="tag t-resubmit">Resubmit</span></td>
 <td class="who p3" data-v="2">Biller</td>
-<td class="p2 unres" data-v="114" title="114 days since anyone recorded an action on this claim">Open <em>· untouched 114d</em></td>
-<td data-v="8">8 days left</td>
-</tr>
-<tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">03/20/2026</span> Visit</li><li><span class="d">03/23/2026</span> Claim submitted</li>
-<li><span class="d">03/24/2026</span> Accepted by payer</li><li><span class="d">04/17/2026</span> Remittance — denied CO-B15</li>
-<li><span class="d">04/21/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 114 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0323-9017</li><li><span>Patient DOB</span> 06/30/1968</li>
-<li><span>Billed</span> $41.30</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-B15 · qualifying service not covered</li></ul>
-<div class="next"><b>Next step</b>The administration code went out without the office visit it belongs to. Rebill both on one claim. No appeal needed — this is a resubmission.</div></div>
-</div></td></tr>
-
-<tr class="main" data-tag="admin" data-state="open" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Patel, A.</td><td class="p2 nw" data-v="2025-11-14">11/14/2025</td><td class="p4">20611</td><td class="p3">Aetna</td>
-<td class="r" data-v="205.60">$205.60</td><td class="r p4" data-v="0">&mdash;</td>
-<td class="p2" data-v="4">Reversed</td>
-<td class="means p3">Paid in January, then reversed in June after a retro review</td>
-<td data-v="4"><span class="tag t-admin">Appeal · admin</span></td>
-<td class="who p3" data-v="2">Biller</td>
-<td class="p2 unres" data-v="41" title="41 days since anyone recorded an action on this claim">Open <em>· untouched 41d</em></td>
+<td class="p2 unres" data-v="112" title="112 days since anyone recorded an action on this claim">Open <em>&middot; untouched 112d</em></td>
 <td data-v="9">9 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">11/14/2025</span> Visit</li><li><span class="d">11/17/2025</span> Claim submitted</li>
-<li><span class="d">12/29/2025</span> Remittance — paid $205.60</li><li><span class="d">01/05/2026</span> Payment posted</li>
-<li class="gap"><span class="d">06/26/2026</span> Second remittance — payment reversed</li>
-<li><span class="d">06/30/2026</span> Reversal posted</li>
-<li class="gap"><span class="d">—</span> No action recorded for 41 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2025-1117-4409</li><li><span>Patient DOB</span> 12/02/1966</li>
-<li><span>Billed</span> $240.00</li><li><span>Allowed</span> $205.60</li><li><span>Paid then taken back</span> $205.60</li>
-<li><span>Reason given</span> Retroactive eligibility review</li></ul>
-<div class="next"><b>Next step</b>Money you already banked left again seven months later. Dispute the recoupment with the eligibility verification from the date of service. Paperwork, not medicine.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">03/20/2026</span> Visit</li><li><span class="d">03/23/2026</span> Claim submitted</li><li><span class="d">03/24/2026</span> Accepted by payer</li><li><span class="d">04/17/2026</span> Remittance &mdash; denied CO-B15</li><li><span class="d">04/21/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 112 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0323-9017</li><li><span>Patient DOB</span> 06/30/1968</li><li><span>Billed</span> $41.30</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-B15 &middot; qualifying service not received or adjudicated</li></ul><div class="next"><b>Next step</b>The administration code went out without the office visit it belongs to. Rebill both on one claim. No appeal needed &mdash; this is a resubmission.</div></div>
 </div></td></tr>
-
-<tr class="main" data-tag="recode" data-state="open" data-who="Coder" data-open="false">
-<td class="pt"><span class="caret">›</span> Chen, R.</td><td class="p2 nw" data-v="2026-04-18">04/18/2026</td><td class="p4">20610</td><td class="p3">UnitedHealthcare</td>
-<td class="r" data-v="178.40">$178.40</td><td class="r p4" data-v="0">&mdash;</td>
-<td class="p2" data-v="2">Denied</td>
-<td class="means p3">Joint injection bundled into the office visit; modifier 25 absent</td>
-<td data-v="2"><span class="tag t-recode">Recode</span></td>
-<td class="who p3" data-v="3">Coder</td>
-<td class="p2 unres" data-v="95" title="95 days since anyone recorded an action on this claim">Open <em>· untouched 95d</em></td>
-<td data-v="12">12 days left</td>
+<tr class="main" data-tag="under" data-state="open" data-who="Biller" data-open="false">
+<td class="pt"><span class="caret">&rsaquo;</span> Brooks, S.</td><td class="p2 nw" data-v="2026-03-09">03/09/2026</td><td class="p4">96372</td><td class="p3">BCBS</td>
+<td class="r" data-v="13.70">$13.70</td><td class="r p4" data-v="0">&mdash;</td>
+<td class="p2" data-v="3">Paid short</td>
+<td class="means p3">Payer allowed $42.10 and posted $28.40</td>
+<td data-v="6"><span class="tag t-under">Underpaid</span></td>
+<td class="who p3" data-v="2">Biller</td>
+<td class="p2 unres" data-v="126" title="126 days since anyone recorded an action on this claim">Open <em>&middot; untouched 126d</em></td>
+<td data-v="49">49 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">04/18/2026</span> Visit</li><li><span class="d">04/20/2026</span> Claim submitted</li>
-<li><span class="d">04/21/2026</span> Accepted by payer</li><li><span class="d">05/07/2026</span> Remittance — office visit paid, injection denied CO-97</li>
-<li><span class="d">05/11/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 95 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0420-1156</li><li><span>Patient DOB</span> 11/08/1978</li>
-<li><span>Billed</span> $310.00</li><li><span>Allowed</span> $131.60</li><li><span>Paid</span> $131.60</li>
-<li><span>Denial</span> CO-97 · included in another service</li></ul>
-<div class="next"><b>Next step</b>The E/M was separately identifiable but went out without modifier 25, so the payer folded the injection into it. Corrected claim with the modifier appended.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">03/09/2026</span> Visit</li><li><span class="d">03/11/2026</span> Claim submitted</li><li><span class="d">03/12/2026</span> Accepted by payer</li><li><span class="d">04/02/2026</span> Remittance &mdash; allowed $42.10, paid $28.40</li><li><span class="d">04/07/2026</span> Payment posted in full, no variance flagged</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 126 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0311-7734</li><li><span>Patient DOB</span> 09/05/1971</li><li><span>Billed</span> $58.00</li><li><span>Allowed</span> $42.10</li><li><span>Patient responsibility</span> $0.00</li><li><span>Paid</span> $28.40</li><li><span>Payer note</span> No adjustment code accounts for the $13.70 gap</li></ul><div class="next"><b>Next step</b>The payer&rsquo;s own remittance allowed $42.10, assigned nothing to the patient, and sent $28.40. No adjustment code on the claim accounts for the remaining $13.70. Small on its own &mdash; the question is how often it repeats.</div></div>
 </div></td></tr>
-
 <tr class="main" data-tag="elig" data-state="open" data-who="Front desk" data-open="false">
-<td class="pt"><span class="caret">›</span> Whitfield, J.</td><td class="p2 nw" data-v="2026-04-02">04/02/2026</td><td class="p4">99396</td><td class="p3">Cigna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Whitfield, J.</td><td class="p2 nw" data-v="2026-04-02">04/02/2026</td><td class="p4">99396</td><td class="p3">Cigna</td>
 <td class="r" data-v="224.00">$224.00</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="2">Denied</td>
-<td class="means p3">Another plan is primary; this one needs to go there first</td>
+<td class="means p3">Payer says another plan is primary under coordination of benefits</td>
 <td data-v="3"><span class="tag t-elig">Eligibility</span></td>
 <td class="who p3" data-v="1">Front desk</td>
-<td class="p2 unres" data-v="111" title="111 days since anyone recorded an action on this claim">Open <em>· untouched 111d</em></td>
-<td data-v="19">19 days left</td>
+<td class="p2 unres" data-v="109" title="109 days since anyone recorded an action on this claim">Open <em>&middot; untouched 109d</em></td>
+<td data-v="68">68 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">04/02/2026</span> Visit</li><li><span class="d">04/06/2026</span> Claim submitted</li>
-<li><span class="d">04/07/2026</span> Accepted by payer</li><li><span class="d">04/21/2026</span> Remittance — denied CO-22</li>
-<li><span class="d">04/24/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 111 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0406-2280</li><li><span>Patient DOB</span> 08/11/1959</li>
-<li><span>Billed</span> $224.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-22 · covered by another payer per COB</li></ul>
-<div class="next"><b>Next step</b>Ask the patient which plan is primary, update coverage, bill that plan, then bill Cigna as secondary. One phone call from the front desk.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">04/02/2026</span> Visit</li><li><span class="d">04/06/2026</span> Claim submitted</li><li><span class="d">04/07/2026</span> Accepted by payer</li><li><span class="d">04/21/2026</span> Remittance &mdash; denied CO-22</li><li><span class="d">04/24/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 109 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0406-2280</li><li><span>Patient DOB</span> 08/11/1959</li><li><span>Billed</span> $224.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-22 &middot; care may be covered by another payer per COB</li></ul><div class="next"><b>Next step</b>Ask the patient which plan is primary, update coverage, bill that plan, then bill Cigna as secondary. One phone call from the front desk.</div></div>
 </div></td></tr>
-
 <tr class="main" data-tag="recode" data-state="open" data-who="Coder" data-open="false">
-<td class="pt"><span class="caret">›</span> Sorensen, K.</td><td class="p2 nw" data-v="2026-04-24">04/24/2026</td><td class="p4">99214</td><td class="p3">UnitedHealthcare</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Sorensen, K.</td><td class="p2 nw" data-v="2026-04-24">04/24/2026</td><td class="p4">99214</td><td class="p3">UnitedHealthcare</td>
 <td class="r" data-v="156.00">$156.00</td><td class="r p4" data-v="30.00">$30.00</td>
 <td class="p2" data-v="1">Rejected</td>
 <td class="means p3">Procedure code inconsistent with the modifier used</td>
 <td data-v="2"><span class="tag t-recode">Recode</span></td>
 <td class="who p3" data-v="3">Coder</td>
-<td class="p2 unres" data-v="79" title="79 days since anyone recorded an action on this claim">Open <em>· untouched 79d</em></td>
-<td data-v="26">26 days left</td>
+<td class="p2 unres" data-v="105" title="105 days since anyone recorded an action on this claim">Open <em>&middot; untouched 105d</em></td>
+<td data-v="71">71 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">04/24/2026</span> Visit</li><li><span class="d">04/27/2026</span> Claim submitted</li>
-<li class="gap"><span class="d">04/28/2026</span> Rejected at the clearinghouse — never reached adjudication</li>
-<li class="gap"><span class="d">—</span> No action recorded for 79 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0427-3318</li><li><span>Patient DOB</span> 12/08/1974</li>
-<li><span>Billed</span> $186.00</li><li><span>Allowed</span> &mdash;</li><li><span>Paid</span> $0.00</li>
-<li><span>Rejection</span> CO-4 · modifier missing or inconsistent</li></ul>
-<div class="next"><b>Next step</b>This one never became a claim the payer looked at. It bounced at the clearinghouse and sat. Fix the modifier and send it — but the filing clock has been running the whole time.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">04/24/2026</span> Visit</li><li><span class="d">04/27/2026</span> Claim submitted</li><li><span class="d">04/28/2026</span> Rejected before adjudication</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 105 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0427-3318</li><li><span>Patient DOB</span> 12/08/1974</li><li><span>Billed</span> $186.00</li><li><span>Allowed</span> &mdash;</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-4 &middot; procedure code inconsistent with the modifier used</li></ul><div class="next"><b>Next step</b>This one never became a claim the payer looked at &mdash; it bounced before adjudication and sat. Fix the modifier and send it. The clock here is the timely-filing limit, not an appeal window, and it has been running since the date of service.</div></div>
 </div></td></tr>
-
-<tr class="main" data-tag="under" data-state="open" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Brooks, S.</td><td class="p2 nw" data-v="2026-03-09">03/09/2026</td><td class="p4">96372</td><td class="p3">BCBS</td>
-<td class="r" data-v="13.70">$13.70</td><td class="r p4" data-v="8.40">$8.40</td>
-<td class="p2" data-v="3">Paid short</td>
-<td class="means p3">Payer allowed $42.10 and posted $28.40</td>
-<td data-v="6"><span class="tag t-under">Underpaid</span></td>
-<td class="who p3" data-v="2">Biller</td>
-<td class="p2 unres" data-v="125" title="125 days since anyone recorded an action on this claim">Open <em>· untouched 125d</em></td>
-<td data-v="31">31 days left</td>
-</tr>
-<tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">03/09/2026</span> Visit</li><li><span class="d">03/11/2026</span> Claim submitted</li>
-<li><span class="d">03/12/2026</span> Accepted by payer</li><li><span class="d">04/02/2026</span> Remittance — allowed $42.10, paid $28.40</li>
-<li><span class="d">04/07/2026</span> Payment posted in full, no variance flagged</li>
-<li class="gap"><span class="d">—</span> No action recorded for 125 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0311-7734</li><li><span>Patient DOB</span> 09/05/1971</li>
-<li><span>Billed</span> $58.00</li><li><span>Allowed</span> $42.10</li><li><span>Paid</span> $28.40</li>
-<li><span>Variance</span> $13.70 unexplained</li></ul>
-<div class="next"><b>Next step</b>The payer&rsquo;s own remittance says $42.10 was allowed and $28.40 was sent. Nothing on the claim explains the difference. Small on its own — the question is how often it repeats.</div></div>
-</div></td></tr>
-
 <tr class="main" data-tag="resubmit" data-state="open" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Alvarez, M.</td><td class="p2 nw" data-v="2026-05-02">05/02/2026</td><td class="p4">99214</td><td class="p3">Aetna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Alvarez, M.</td><td class="p2 nw" data-v="2026-05-02">05/02/2026</td><td class="p4">99214</td><td class="p3">Aetna</td>
 <td class="r" data-v="142.00">$142.00</td><td class="r p4" data-v="35.00">$35.00</td>
 <td class="p2" data-v="1">Rejected</td>
-<td class="means p3">Referring provider NPI missing from the claim</td>
+<td class="means p3">Claim lacks information &mdash; referring provider NPI missing</td>
 <td data-v="1"><span class="tag t-resubmit">Resubmit</span></td>
 <td class="who p3" data-v="2">Biller</td>
-<td class="p2 unres" data-v="71" title="71 days since anyone recorded an action on this claim">Open <em>· untouched 71d</em></td>
-<td data-v="42">42 days left</td>
+<td class="p2 unres" data-v="97" title="97 days since anyone recorded an action on this claim">Open <em>&middot; untouched 97d</em></td>
+<td data-v="79">79 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">05/02/2026</span> Visit</li><li><span class="d">05/05/2026</span> Claim submitted</li>
-<li class="gap"><span class="d">05/06/2026</span> Rejected — never reached adjudication</li>
-<li class="gap"><span class="d">—</span> No action recorded for 71 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0505-5561</li><li><span>Patient DOB</span> 03/14/1962</li>
-<li><span>Billed</span> $177.00</li><li><span>Allowed</span> &mdash;</li><li><span>Paid</span> $0.00</li>
-<li><span>Rejection</span> CO-16 · missing referring provider NPI</li></ul>
-<div class="next"><b>Next step</b>One field. Add the referring NPI and resend. There is nobody to persuade and nothing to write.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">05/02/2026</span> Visit</li><li><span class="d">05/05/2026</span> Claim submitted</li><li><span class="d">05/06/2026</span> Rejected before adjudication</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 97 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0505-5561</li><li><span>Patient DOB</span> 03/14/1962</li><li><span>Billed</span> $177.00</li><li><span>Allowed</span> &mdash;</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-16 &middot; claim/service lacks information or has a billing error</li></ul><div class="next"><b>Next step</b>One field. Add the referring NPI and resend. There is nobody to persuade and nothing to write.</div></div>
 </div></td></tr>
-
-<tr class="main" data-tag="elig" data-state="open" data-who="Front desk" data-open="false">
-<td class="pt"><span class="caret">›</span> Rivera, L.</td><td class="p2 nw" data-v="2026-05-22">05/22/2026</td><td class="p4">99213</td><td class="p3">Medicaid</td>
-<td class="r" data-v="96.00">$96.00</td><td class="r p4" data-v="0">&mdash;</td>
+<tr class="main" data-tag="recode" data-state="open" data-who="Coder" data-open="false">
+<td class="pt"><span class="caret">&rsaquo;</span> Chen, R.</td><td class="p2 nw" data-v="2026-04-18">04/18/2026</td><td class="p4">20610</td><td class="p3">UnitedHealthcare</td>
+<td class="r" data-v="178.40">$178.40</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="2">Denied</td>
-<td class="means p3">Patient showed inactive on the date of service</td>
-<td data-v="3"><span class="tag t-elig">Eligibility</span></td>
-<td class="who p3" data-v="1">Front desk</td>
-<td class="p2 unres" data-v="51" title="51 days since anyone recorded an action on this claim">Open <em>· untouched 51d</em></td>
-<td data-v="55">55 days left</td>
+<td class="means p3">Injection folded into the payment for the office visit; modifier 25 absent</td>
+<td data-v="2"><span class="tag t-recode">Recode</span></td>
+<td class="who p3" data-v="3">Coder</td>
+<td class="p2 unres" data-v="92" title="92 days since anyone recorded an action on this claim">Open <em>&middot; untouched 92d</em></td>
+<td data-v="84">84 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">05/22/2026</span> Visit</li><li><span class="d">05/26/2026</span> Claim submitted</li>
-<li><span class="d">05/27/2026</span> Accepted by payer</li><li><span class="d">06/15/2026</span> Remittance — denied PR-31</li>
-<li><span class="d">06/19/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 51 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0526-6642</li><li><span>Patient DOB</span> 06/19/1994</li>
-<li><span>Billed</span> $96.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> PR-31 · patient not eligible on the date of service</li></ul>
-<div class="next"><b>Next step</b>Medicaid eligibility often lapses and is reinstated retroactively. Recheck coverage for that date before writing it off or billing the patient.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">04/18/2026</span> Visit</li><li><span class="d">04/20/2026</span> Claim submitted</li><li><span class="d">04/21/2026</span> Accepted by payer</li><li><span class="d">05/07/2026</span> Remittance &mdash; office visit paid, injection denied CO-97</li><li><span class="d">05/11/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 92 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0420-1156</li><li><span>Patient DOB</span> 11/08/1978</li><li><span>Billed</span> $310.00</li><li><span>Allowed</span> $131.60</li><li><span>Paid</span> $131.60</li><li><span>Payer note</span> CO-97 &middot; benefit included in the payment for another service</li></ul><div class="next"><b>Next step</b>The E/M was separately identifiable but went out without modifier 25, so the payer folded the injection into it. Corrected claim with the modifier appended.</div></div>
 </div></td></tr>
-
-<tr class="main" data-tag="clinical" data-state="open" data-who="Physician" data-open="false">
-<td class="pt"><span class="caret">›</span> Duarte, C.</td><td class="p2 nw" data-v="2026-05-15">05/15/2026</td><td class="p4">97110</td><td class="p3">BCBS</td>
-<td class="r" data-v="65.00">$65.00</td><td class="r p4" data-v="20.00">$20.00</td>
-<td class="p2" data-v="2">Denied</td>
-<td class="means p3">Payer says the records don&rsquo;t support this many sessions</td>
-<td data-v="5"><span class="tag t-clinical">Appeal · clinical</span></td>
-<td class="who phys p3" data-v="4">Physician</td>
-<td class="p2 unres" data-v="58" title="58 days since anyone recorded an action on this claim">Open <em>· untouched 58d</em></td>
-<td data-v="62">62 days left</td>
-</tr>
-<tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">05/15/2026</span> Visit</li><li><span class="d">05/18/2026</span> Claim submitted</li>
-<li><span class="d">05/19/2026</span> Accepted by payer</li><li><span class="d">06/09/2026</span> Remittance — denied CO-151</li>
-<li><span class="d">06/12/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 58 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0518-7719</li><li><span>Patient DOB</span> 02/17/1990</li>
-<li><span>Billed</span> $85.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-151 · frequency not supported by the information submitted</li></ul>
-<div class="next"><b>Next step</b>The payer is disputing how many sessions were warranted, which is a clinical judgment. Winning it takes a short letter describing the functional deficit and why the course was extended. Only you can write it.</div></div>
-</div></td></tr>
-
 <tr class="main" data-tag="admin" data-state="open" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Nguyen, T.</td><td class="p2 nw" data-v="2026-05-11">05/11/2026</td><td class="p4">73721</td><td class="p3">Cigna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Nguyen, T.</td><td class="p2 nw" data-v="2026-05-11">05/11/2026</td><td class="p4">73721</td><td class="p3">Cigna</td>
 <td class="r" data-v="412.00">$412.00</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="2">Denied</td>
-<td class="means p3">No prior authorization on file for the MRI</td>
-<td data-v="4"><span class="tag t-admin">Appeal · admin</span></td>
+<td class="means p3">Precertification absent for the MRI</td>
+<td data-v="4"><span class="tag t-admin">Appeal &middot; admin</span></td>
 <td class="who p3" data-v="2">Biller</td>
-<td class="p2 unres" data-v="62" title="62 days since anyone recorded an action on this claim">Open <em>· untouched 62d</em></td>
-<td data-v="68">68 days left</td>
+<td class="p2 unres" data-v="61" title="61 days since anyone recorded an action on this claim">Open <em>&middot; untouched 61d</em></td>
+<td data-v="116">116 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">05/11/2026</span> Imaging performed</li><li><span class="d">05/13/2026</span> Claim submitted</li>
-<li><span class="d">05/14/2026</span> Accepted by payer</li><li><span class="d">06/08/2026</span> Remittance — denied CO-197</li>
-<li><span class="d">06/11/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 62 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0513-7051</li><li><span>Patient DOB</span> 01/30/1989</li>
-<li><span>Billed</span> $412.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-197 · precertification absent</li></ul>
-<div class="next"><b>Next step</b>The largest single amount on this list. If authorization was obtained and simply not attached, this is an appeal with the auth number and it usually pays. If it was never obtained, it becomes a retro-auth request. Either way, paperwork.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">05/11/2026</span> Imaging performed</li><li><span class="d">05/13/2026</span> Claim submitted</li><li><span class="d">05/14/2026</span> Accepted by payer</li><li><span class="d">06/08/2026</span> Remittance &mdash; denied CO-197</li><li><span class="d">06/11/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 61 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0513-7051</li><li><span>Patient DOB</span> 01/30/1989</li><li><span>Billed</span> $412.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-197 &middot; precertification/authorization/notification absent</li></ul><div class="next"><b>Next step</b>The largest single amount on this list. If authorization was obtained and simply not attached, this is an appeal with the auth number and it usually pays. If it was never obtained, it becomes a retro-auth request. Either way, paperwork.</div></div>
 </div></td></tr>
-
 <tr class="main" data-tag="clinical" data-state="open" data-who="Physician" data-open="false">
-<td class="pt"><span class="caret">›</span> Haddad, N.</td><td class="p2 nw" data-v="2026-05-29">05/29/2026</td><td class="p4">20605</td><td class="p3">Aetna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Duarte, C.</td><td class="p2 nw" data-v="2026-05-15">05/15/2026</td><td class="p4">97110</td><td class="p3">BCBS</td>
+<td class="r" data-v="65.00">$65.00</td><td class="r p4" data-v="20.00">$20.00</td>
+<td class="p2" data-v="2">Denied</td>
+<td class="means p3">Payer deems the information submitted does not support this many sessions</td>
+<td data-v="5"><span class="tag t-clinical">Appeal &middot; clinical</span></td>
+<td class="who phys p3" data-v="4">Physician</td>
+<td class="p2 unres" data-v="60" title="60 days since anyone recorded an action on this claim">Open <em>&middot; untouched 60d</em></td>
+<td data-v="117">117 days left</td>
+</tr>
+<tr class="detail hide"><td colspan="12"><div class="dwrap">
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">05/15/2026</span> Visit</li><li><span class="d">05/18/2026</span> Claim submitted</li><li><span class="d">05/19/2026</span> Accepted by payer</li><li><span class="d">06/09/2026</span> Remittance &mdash; denied CO-151</li><li><span class="d">06/12/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 60 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0518-7719</li><li><span>Patient DOB</span> 02/17/1990</li><li><span>Billed</span> $85.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-151 &middot; information submitted does not support this frequency of services</li></ul><div class="next"><b>Next step</b>The payer is disputing how many sessions were warranted, which is a clinical judgment. Winning it takes a short letter describing the functional deficit and why the course was extended. Only you can write it.</div></div>
+</div></td></tr>
+<tr class="main" data-tag="elig" data-state="open" data-who="Front desk" data-open="false">
+<td class="pt"><span class="caret">&rsaquo;</span> Rivera, L.</td><td class="p2 nw" data-v="2026-05-22">05/22/2026</td><td class="p4">99213</td><td class="p3">Medicaid</td>
+<td class="r" data-v="96.00">$96.00</td><td class="r p4" data-v="0">&mdash;</td>
+<td class="p2" data-v="2">Denied</td>
+<td class="means p3">Payer cannot identify the patient as its insured on that date</td>
+<td data-v="3"><span class="tag t-elig">Eligibility</span></td>
+<td class="who p3" data-v="1">Front desk</td>
+<td class="p2 unres" data-v="53" title="53 days since anyone recorded an action on this claim">Open <em>&middot; untouched 53d</em></td>
+<td data-v="123">123 days left</td>
+</tr>
+<tr class="detail hide"><td colspan="12"><div class="dwrap">
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">05/22/2026</span> Visit</li><li><span class="d">05/26/2026</span> Claim submitted</li><li><span class="d">05/27/2026</span> Accepted by payer</li><li><span class="d">06/15/2026</span> Remittance &mdash; denied PR-31</li><li><span class="d">06/19/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 53 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0526-6642</li><li><span>Patient DOB</span> 06/19/1994</li><li><span>Billed</span> $96.00</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> PR-31 &middot; patient cannot be identified as our insured</li></ul><div class="next"><b>Next step</b>Usually a wrong member ID or coverage that lapsed and was reinstated retroactively. Recheck eligibility for that date before writing it off or billing the patient.</div></div>
+</div></td></tr>
+<tr class="main" data-tag="clinical" data-state="open" data-who="Physician" data-open="false">
+<td class="pt"><span class="caret">&rsaquo;</span> Haddad, N.</td><td class="p2 nw" data-v="2026-05-29">05/29/2026</td><td class="p4">20605</td><td class="p3">Aetna</td>
 <td class="r" data-v="88.20">$88.20</td><td class="r p4" data-v="25.00">$25.00</td>
 <td class="p2" data-v="2">Denied</td>
 <td class="means p3">Injection called not medically necessary at this frequency</td>
-<td data-v="5"><span class="tag t-clinical">Appeal · clinical</span></td>
+<td data-v="5"><span class="tag t-clinical">Appeal &middot; clinical</span></td>
 <td class="who phys p3" data-v="4">Physician</td>
-<td class="p2 unres" data-v="44" title="44 days since anyone recorded an action on this claim">Open <em>· untouched 44d</em></td>
-<td data-v="76">76 days left</td>
+<td class="p2 unres" data-v="46" title="46 days since anyone recorded an action on this claim">Open <em>&middot; untouched 46d</em></td>
+<td data-v="131">131 days left</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">05/29/2026</span> Visit</li><li><span class="d">06/01/2026</span> Claim submitted</li>
-<li><span class="d">06/02/2026</span> Accepted by payer</li><li><span class="d">06/23/2026</span> Remittance — denied CO-50</li>
-<li><span class="d">06/26/2026</span> Posted to ledger as adjustment</li>
-<li class="gap"><span class="d">—</span> No action recorded for 44 days</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0601-8123</li><li><span>Patient DOB</span> 04/25/1983</li>
-<li><span>Billed</span> $113.20</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li>
-<li><span>Denial</span> CO-50 · not deemed medically necessary</li></ul>
-<div class="next"><b>Next step</b>Same shape as Okafor, D. — and that one has already expired. This has 76 days.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">05/29/2026</span> Visit</li><li><span class="d">06/01/2026</span> Claim submitted</li><li><span class="d">06/02/2026</span> Accepted by payer</li><li><span class="d">06/23/2026</span> Remittance &mdash; denied CO-50</li><li><span class="d">06/26/2026</span> Posted to ledger as adjustment</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 46 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0601-8123</li><li><span>Patient DOB</span> 04/25/1983</li><li><span>Billed</span> $113.20</li><li><span>Allowed</span> $0.00</li><li><span>Paid</span> $0.00</li><li><span>Payer note</span> CO-50 &middot; not deemed medically necessary</li></ul><div class="next"><b>Next step</b>Same shape as Okafor, D. &mdash; and that one has already expired. This one still has time.</div></div>
 </div></td></tr>
-
+<tr class="main" data-tag="admin" data-state="open" data-who="Biller" data-open="false">
+<td class="pt"><span class="caret">&rsaquo;</span> Patel, A.</td><td class="p2 nw" data-v="2025-11-14">11/14/2025</td><td class="p4">20611</td><td class="p3">Aetna</td>
+<td class="r" data-v="205.60">$205.60</td><td class="r p4" data-v="0">&mdash;</td>
+<td class="p2" data-v="4">Reversed</td>
+<td class="means p3">Paid in January, then reversed in June after a retroactive review</td>
+<td data-v="4"><span class="tag t-admin">Appeal &middot; admin</span></td>
+<td class="who p3" data-v="2">Biller</td>
+<td class="p2 unres" data-v="42" title="42 days since anyone recorded an action on this claim">Open <em>&middot; untouched 42d</em></td>
+<td data-v="134">134 days left</td>
+</tr>
+<tr class="detail hide"><td colspan="12"><div class="dwrap">
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">11/14/2025</span> Visit</li><li><span class="d">11/17/2025</span> Claim submitted</li><li><span class="d">12/29/2025</span> Remittance &mdash; paid $205.60</li><li><span class="d">01/05/2026</span> Payment posted</li><li><span class="d">06/26/2026</span> Second remittance &mdash; payment reversed</li><li><span class="d">06/30/2026</span> Reversal posted</li><li class="gap"><span class="d">&mdash;</span> No action recorded for 42 days</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2025-1117-4409</li><li><span>Patient DOB</span> 12/02/1966</li><li><span>Billed</span> $240.00</li><li><span>Allowed</span> $205.60</li><li><span>Paid</span> $205.60 then recouped</li><li><span>Payer note</span> Retroactive eligibility review</li></ul><div class="next"><b>Next step</b>Money you already banked left again seven months later. Dispute the recoupment with the eligibility verification from the date of service. Paperwork, not medicine.</div></div>
+</div></td></tr>
 <tr class="main done" data-tag="resubmit" data-state="done" data-who="Biller" data-open="false">
-<td class="pt"><span class="caret">›</span> Lindqvist, P.</td><td class="p2 nw" data-v="2026-04-09">04/09/2026</td><td class="p4">99213</td><td class="p3">Aetna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Lindqvist, P.</td><td class="p2 nw" data-v="2026-04-09">04/09/2026</td><td class="p4">99213</td><td class="p3">Aetna</td>
 <td class="r" data-v="118.00">$118.00</td><td class="r p4" data-v="25.00">$25.00</td>
 <td class="p2" data-v="5">Paid</td>
 <td class="means p3">NPI corrected and resubmitted; paid in full</td>
@@ -680,19 +571,11 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
 <td data-v="9999">Closed</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">04/09/2026</span> Visit</li><li><span class="d">04/13/2026</span> Claim submitted</li>
-<li><span class="d">04/14/2026</span> Rejected — CO-16</li><li><span class="d">05/28/2026</span> Corrected and resubmitted</li>
-<li><span class="d">06/15/2026</span> Remittance — paid $118.00</li><li><span class="d">06/18/2026</span> Payment posted · resolved</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0413-4402</li><li><span>Patient DOB</span> 10/03/1980</li>
-<li><span>Billed</span> $143.00</li><li><span>Allowed</span> $118.00</li><li><span>Paid</span> $118.00</li>
-<li><span>Days to close</span> 66</li></ul>
-<div class="next"><b>Outcome</b>Recovered in full. Sixty-six days from rejection to payment, forty-four of which were spent waiting for someone to notice.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">04/09/2026</span> Visit</li><li><span class="d">04/13/2026</span> Claim submitted</li><li><span class="d">04/14/2026</span> Rejected &mdash; CO-16</li><li><span class="d">05/28/2026</span> Corrected and resubmitted</li><li><span class="d">06/15/2026</span> Remittance &mdash; paid $118.00</li><li><span class="d">06/18/2026</span> Payment posted &middot; resolved</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0413-4402</li><li><span>Patient DOB</span> 10/03/1980</li><li><span>Billed</span> $143.00</li><li><span>Allowed</span> $118.00</li><li><span>Paid</span> $118.00</li><li><span>Payer note</span> Closed 66 days after the rejection</li></ul><div class="next"><b>Outcome</b>Recovered in full. Sixty-six days from rejection to payment, forty-four of which were spent waiting for someone to notice.</div></div>
 </div></td></tr>
-
 <tr class="main done" data-tag="recode" data-state="done" data-who="Coder" data-open="false">
-<td class="pt"><span class="caret">›</span> Osei, F.</td><td class="p2 nw" data-v="2026-03-30">03/30/2026</td><td class="p4">20610</td><td class="p3">Cigna</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Osei, F.</td><td class="p2 nw" data-v="2026-03-30">03/30/2026</td><td class="p4">20610</td><td class="p3">Cigna</td>
 <td class="r" data-v="165.50">$165.50</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="5">Paid</td>
 <td class="means p3">Modifier 25 added on resubmission</td>
@@ -702,41 +585,23 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
 <td data-v="9999">Closed</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">03/30/2026</span> Visit</li><li><span class="d">04/02/2026</span> Claim submitted</li>
-<li><span class="d">04/23/2026</span> Remittance — injection denied CO-97</li>
-<li><span class="d">05/06/2026</span> Corrected claim with modifier 25</li>
-<li><span class="d">05/26/2026</span> Remittance — paid $165.50</li><li><span class="d">05/29/2026</span> Payment posted · resolved</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0402-3390</li><li><span>Patient DOB</span> 05/27/1972</li>
-<li><span>Billed</span> $290.00</li><li><span>Allowed</span> $165.50</li><li><span>Paid</span> $165.50</li>
-<li><span>Days to close</span> 36</li></ul>
-<div class="next"><b>Outcome</b>Recovered. The same denial as Chen, R. — that one is still open with twelve days left on it.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">03/30/2026</span> Visit</li><li><span class="d">04/02/2026</span> Claim submitted</li><li><span class="d">04/23/2026</span> Remittance &mdash; injection denied CO-97</li><li><span class="d">05/06/2026</span> Corrected claim with modifier 25</li><li><span class="d">05/26/2026</span> Remittance &mdash; paid $165.50</li><li><span class="d">05/29/2026</span> Payment posted &middot; resolved</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0402-3390</li><li><span>Patient DOB</span> 05/27/1972</li><li><span>Billed</span> $290.00</li><li><span>Allowed</span> $165.50</li><li><span>Paid</span> $165.50</li><li><span>Payer note</span> Closed 36 days after the denial</li></ul><div class="next"><b>Outcome</b>Recovered. The same denial as Chen, R. &mdash; that one is still open.</div></div>
 </div></td></tr>
-
 <tr class="main done" data-tag="clinical" data-state="done" data-who="Physician" data-open="false">
-<td class="pt"><span class="caret">›</span> Marsh, T.</td><td class="p2 nw" data-v="2026-02-18">02/18/2026</td><td class="p4">99214</td><td class="p3">Medicare</td>
+<td class="pt"><span class="caret">&rsaquo;</span> Marsh, T.</td><td class="p2 nw" data-v="2026-02-18">02/18/2026</td><td class="p4">99214</td><td class="p3">Medicare</td>
 <td class="r" data-v="149.00">$149.00</td><td class="r p4" data-v="0">&mdash;</td>
 <td class="p2" data-v="5">Paid</td>
-<td class="means p3">Appeal filed with the office note; denial overturned</td>
-<td data-v="5"><span class="tag t-clinical">Appeal · clinical</span></td>
-<td class="who p3" data-v="4">Physician</td>
+<td class="means p3">Redetermination filed with the office note; denial overturned</td>
+<td data-v="5"><span class="tag t-clinical">Appeal &middot; clinical</span></td>
+<td class="who phys p3" data-v="4">Physician</td>
 <td class="p2 closed" data-v="-100">Closed 06/02/2026</td>
 <td data-v="9999">Closed</td>
 </tr>
 <tr class="detail hide"><td colspan="12"><div class="dwrap">
-<div><div class="dhead">Claim timeline</div><ul class="tl">
-<li><span class="d">02/18/2026</span> Visit</li><li><span class="d">02/20/2026</span> Claim submitted</li>
-<li><span class="d">03/16/2026</span> Remittance — denied CO-50</li>
-<li><span class="d">04/09/2026</span> Redetermination filed with office note</li>
-<li><span class="d">05/28/2026</span> Denial overturned — paid $149.00</li><li><span class="d">06/02/2026</span> Payment posted · resolved</li></ul></div>
-<div><div class="dhead">Detail</div><ul class="kv">
-<li><span>Claim</span> 2026-0220-2214</li><li><span>Patient DOB</span> 09/14/1965</li>
-<li><span>Billed</span> $149.00</li><li><span>Allowed</span> $149.00</li><li><span>Paid</span> $149.00</li>
-<li><span>Days to close</span> 78</li></ul>
-<div class="next"><b>Outcome</b>Overturned on appeal. Roughly twenty minutes of physician time, filed inside the window. Okafor, D. was the identical denial and nobody filed it.</div></div>
+<div><div class="dhead">Claim timeline</div><ul class="tl"><li><span class="d">02/18/2026</span> Visit</li><li><span class="d">02/20/2026</span> Claim submitted</li><li><span class="d">03/16/2026</span> Remittance &mdash; denied CO-50</li><li><span class="d">04/09/2026</span> Redetermination filed with office note</li><li><span class="d">05/28/2026</span> Denial overturned &mdash; paid $149.00</li><li><span class="d">06/02/2026</span> Payment posted &middot; resolved</li></ul></div>
+<div><div class="dhead">Detail</div><ul class="kv"><li><span>Claim</span> 2026-0220-2214</li><li><span>Patient DOB</span> 09/14/1965</li><li><span>Billed</span> $149.00</li><li><span>Allowed</span> $149.00</li><li><span>Paid</span> $149.00</li><li><span>Payer note</span> Filed on day 24 of a 120-day window</li></ul><div class="next"><b>Outcome</b>Overturned on appeal. Roughly twenty minutes of physician time, filed well inside the window. Okafor, D. was the identical denial and nobody filed it.</div></div>
 </div></td></tr>
-
             </tbody>
           </table>
         </div>
@@ -751,9 +616,9 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
       </div>
 
       <p class="scrollhint">Click any row to open the claim. On a narrow screen the table shows fewer columns &mdash; the rest are inside the row.</p>
-      <p class="fineprint">Appeal windows vary by payer and plan.</p>
+      <p class="fineprint">Appeal windows are set by each payer’s contract and vary widely. Shown here: Medicare at 120 days from receipt of the remittance advice (receipt presumed 5 days after the notice date, per CMS); commercial payers illustrated at 180 days from the remittance date. Rejected claims are governed by the timely-filing limit, not an appeal window.</p>
 
-      <p class="caption">Three things do most of the work. <strong>Who acts</strong> separates the claims your front desk can close today from the three that need you to write something. <strong>Resolved</strong> is the column nobody currently has &mdash; <em>untouched 164d</em> means a hundred and sixty-four days have passed since anyone recorded a single action on that claim, and in every report you get today it looks identical to one denied last week. And opening a row shows you exactly where the work should have happened and didn&rsquo;t.</p>
+      <p class="caption">Three things do most of the work. <strong>Who acts</strong> separates the claims your front desk can close today from the three that need you to write something. <strong>Resolved</strong> is the column nobody currently has &mdash; <em>untouched 134d</em> means a hundred and thirty-four days have passed since anyone recorded a single action on that claim, and in every report you get today it looks identical to one denied last week. And opening a row shows you exactly where the work should have happened and didn&rsquo;t.</p>
     </div>
 
     <div class="deflist rise">
@@ -763,7 +628,7 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
         <div class="defrow"><dt><span class="tag t-elig">Eligibility</span></dt><dd>The claim went to the wrong plan, or to the right plan on the wrong date. Coordination of benefits, termed coverage, a secondary that should have been primary.</dd></div>
         <div class="defrow"><dt><span class="tag t-admin">Appeal &middot; admin</span></dt><dd>A real dispute, but a procedural one: authorization that existed and wasn&rsquo;t attached, timely filing with proof, a recoupment that shouldn&rsquo;t have happened. Paperwork, not medicine.</dd></div>
         <div class="defrow"><dt><span class="tag t-clinical">Appeal &middot; clinical</span></dt><dd>The payer is disputing the medicine &mdash; necessity, frequency, level of service. Winning it takes a clinician who can say why the care was warranted. These are the ones that get abandoned, because they&rsquo;re the only ones that cost your time rather than your staff&rsquo;s.</dd></div>
-        <div class="defrow"><dt><span class="tag t-under">Underpaid</span></dt><dd>It paid, just not correctly. The payer&rsquo;s own allowed amount and what posted don&rsquo;t agree, or the allowed amount doesn&rsquo;t match your contract.</dd></div>
+        <div class="defrow"><dt><span class="tag t-under">Underpaid</span></dt><dd><strong>Not the contractual write-off.</strong> Every claim is billed above the contracted rate on purpose, and the gap between your charge and the allowed amount is a normal adjustment &mdash; it was never collectible. This is a different thing: the payer&rsquo;s own remittance allowed one amount and then paid a smaller one, with nothing on the claim explaining the difference.</dd></div>
       </dl>
     </div>
   </div>
@@ -862,6 +727,10 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
         <div class="a"><div><p>No. Payers will only discuss claims with the provider or a formally designated agent, and Krino is deliberately neither. You keep the relationship. We just tell you where to point it.</p></div></div>
       </div>
       <div class="qa" data-open="false">
+        <button class="q" type="button">Aren&rsquo;t most adjustments just contractual write-offs?<span class="sign"></span></button>
+        <div class="a"><div><p>Most of them, yes &mdash; and those are supposed to be there. You bill above every payer&rsquo;s contracted rate on purpose, so that you never accidentally ask for less than one of them would have paid. The difference gets written off, and it was never money you could collect. Krino doesn&rsquo;t flag any of that. What it separates out is the rest of the line: claims denied for a reason nobody worked, payments smaller than the payer&rsquo;s own allowed amount, and money that was paid and later taken back.</p></div></div>
+      </div>
+      <div class="qa" data-open="false">
         <button class="q" type="button">Isn&rsquo;t this the same as my A/R aging report?<span class="sign"></span></button>
         <div class="a"><div><p>Not quite. A/R aging tells you what&rsquo;s outstanding. It doesn&rsquo;t tell you which claims were denied for a fixable reason, which ones nobody has touched since, which ones are about to run out of appeal time, or which ones can&rsquo;t be closed without a clinician.</p></div></div>
       </div>
@@ -885,7 +754,7 @@ footer{padding:54px 0 70px;border-top:1px solid var(--rule);}
     </div>
     <p class="bio rise">I&rsquo;m Joon Kim, a practicing cardiac electrophysiologist. I know the billing side from inside a practice rather than from a market report, which is exactly why I&rsquo;d rather ask you what you&rsquo;re seeing than assume I already know.</p>
     <form id="talkform" class="rise">
-      <input type="hidden" name="access_key" value="064987f0-8a27-452f-9af3-56265bbaa35e">
+      <input type="hidden" name="access_key" value="7c1d86b9-9eef-477b-854d-565485245362">
       <input type="hidden" name="subject" value="Krino — practice owner inquiry">
       <input type="hidden" name="from_name" value="krinohealth.com">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
