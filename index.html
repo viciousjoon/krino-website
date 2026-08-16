@@ -138,8 +138,8 @@ main.view[hidden]{display:none;}
 .duo .bar.allow.under{background:var(--flag);opacity:.55;}
 .duo .bar.gap{background:var(--flag);}
 .duo .v{text-align:right;color:var(--ink);}
-.founder{display:grid;grid-template-columns:14em 1fr;gap:0 2.6em;}
-@media(max-width:640px){.founder{grid-template-columns:1fr;gap:1em;}}
+.founder{max-width:var(--col);}
+.founder-id{margin-bottom:1.6em;padding-bottom:1.2em;border-bottom:1px solid var(--rule);}
 .founder-name{font-family:'Schibsted Grotesk',sans-serif;font-size:1.3rem;font-weight:600;letter-spacing:-0.02em;color:var(--ink);}
 .founder-role{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.03em;color:var(--muted);margin-top:.5em;line-height:1.5;}
 .founder-words .lead{font-family:'Schibsted Grotesk',sans-serif;font-size:1.28rem;line-height:1.4;letter-spacing:-0.015em;color:var(--ink);margin-bottom:.9em;}
